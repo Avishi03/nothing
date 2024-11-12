@@ -110,3 +110,18 @@ The large file is processed in chunks to handle memory constraints when dealing 
 Error handling could be improved in certain sections (for example, when verifying file integrity).
 The program could be optimized for parallel processing of chunks for faster compression and decompression of large files.
 In summary, the code provides a way to efficiently compress and decompress large CSV files using Huffman coding while ensuring that the decompressed data matches the original. The program is designed to handle large files in manageable chunks, which is especially useful for systems with memory limitations.
+
+## Graph interpretation:
+### Compression ratio analysis
+
+#### X-axis: Chunk Index-
+Represents each chunk of data from the dataset.
+#### Y-axis: Compression Ratio-
+Ratio of compressed size to original size for each chunk.
+The graph shows fluctuation in compression ratios across different chunks, ranging from around 0.8 to 2.4.
+#### Observations:
+The compression ratio varies significantly between chunks, indicating differences in data redundancy across chunks.Peaks in the graph represent chunks with higher compression potential, while dips indicate chunks with less compressible data.
+#### Conclusion:
+Huffman coding effectively compresses chunks with high redundancy, as reflected in higher ratios.Further analysis could investigate characteristics of chunks with lower ratios to optimize compression.
+
+
