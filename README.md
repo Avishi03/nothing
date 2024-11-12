@@ -8,8 +8,8 @@
 ## Intoduction:
 This Java program is designed to handle the compression and decompression of large CSV files using Huffman coding. The program works by dividing the file into smaller chunks, compressing each chunk, and then storing them in a compressed format. It also supports the decompression of these chunks back into their original form. Let me walk you through the main components and functionality of the code:
 
-Key Components:
-Constants:
+## Key Components:
+### Constants:
 
 CHUNK_SIZE: Defines the size of each chunk for processing (1MB).
 MAX_BUFFER_SIZE: Maximum buffer size for reading.
@@ -17,7 +17,7 @@ COMPRESSION_EXTENSION: File extension for compressed files.
 DECOMPRESSION_EXTENSION: File extension for decompressed files.
 CsvParser class: This class contains methods for both compression and decompression of large files. It is a utility class and is not intended to be instantiated.
 
-Node class:
+### Node class:
 
 Represents a node in the Huffman tree, used for encoding and decoding characters.
 Each node holds a character (ch), its frequency (freq), and references to left and right child nodes.
