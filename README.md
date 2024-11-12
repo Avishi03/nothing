@@ -74,7 +74,8 @@ It sets up paths for the input, compressed, and decompressed files.
 It calls the compressLargeFile method to compress the file, followed by the decompressLargeFile method to decompress it.
 After decompression, it calls verifyFiles to check if the decompressed file matches the original.
 
-### Detailed Steps:
+## Detailed Steps:
+
 ### Compression:
 
 ### Read the input CSV file in 1MB chunks.
@@ -97,15 +98,15 @@ Write the decompressed data to the output file.
 
 After decompression, compare the original and decompressed files line by line to ensure they match.
 
-## Important Notes:
+### Important Notes:
 Huffman Coding: A lossless data compression algorithm where frequent characters are represented with shorter codes. The tree is used to efficiently encode and decode data.
 
 
-## Chunking:
+### Chunking:
 The large file is processed in chunks to handle memory constraints when dealing with very large files. This ensures that even large files can be compressed and decompressed without running into memory issues.
 
 
-## Potential Enhancements:
+### Potential Enhancements:
 Error handling could be improved in certain sections (for example, when verifying file integrity).
 The program could be optimized for parallel processing of chunks for faster compression and decompression of large files.
 In summary, the code provides a way to efficiently compress and decompress large CSV files using Huffman coding while ensuring that the decompressed data matches the original. The program is designed to handle large files in manageable chunks, which is especially useful for systems with memory limitations.
