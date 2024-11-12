@@ -5,7 +5,7 @@
 ## 23BDS074
 
 
-## Intoduction:
+## Introduction:
 This Java program is designed to handle the compression and decompression of large CSV files using Huffman coding. The program works by dividing the file into smaller chunks, compressing each chunk, and then storing them in a compressed format. It also supports the decompression of these chunks back into their original form. Let me walk you through the main components and functionality of the code:
 
 ## Key Components:
